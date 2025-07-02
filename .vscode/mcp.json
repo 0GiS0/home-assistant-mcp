@@ -1,0 +1,24 @@
+{
+    "inputs": [
+        {
+            "id": "home-assistant-url",
+            "description": "Home Assistant URL",
+            "type": "promptString",
+        },
+        {
+            "id": "home-assistant-token",
+            "description": "Home Assistant Long-Lived Access Token",
+            "type": "promptString",
+            "password": true
+        }
+    ],
+    "servers": {
+        "home-assistant-mcp": {
+            "type": "http",
+            "url": "${input:home-assistant-url}/mcp_server/sse",
+            "headers": {
+                "Authorization": "Bearer ${input:home-assistant-token}",
+            }
+        }
+    }
+}
