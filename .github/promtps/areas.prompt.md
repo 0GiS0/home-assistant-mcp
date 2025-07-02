@@ -4,4 +4,4 @@ tools: ['GetLiveContext']
 description: 'Identify the areas of the Home Assistant'
 ---
 
-Can you give me the areas that I have in my Home Assistant configuration?
+Dame las áreas que tengo en mi configuración de Home Assistant. Incluye emojis para cada área.
