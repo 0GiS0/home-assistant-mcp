@@ -1,8 +1,8 @@
 {
     "inputs": [
         {
-            "id": "home-assistant-url",
-            "description": "Home Assistant URL",
+            "id": "home-assistant-domain",
+            "description": "Home Assistant Domain",
             "type": "promptString",
         },
         {
@@ -15,7 +15,7 @@
     "servers": {
         "home-assistant-mcp": {
             "type": "http",
-            "url": "${input:home-assistant-url}/mcp_server/sse",
+            "url": "https://${input:home-assistant-domain}/mcp_server/sse",
             "headers": {
                 "Authorization": "Bearer ${input:home-assistant-token}",
             }

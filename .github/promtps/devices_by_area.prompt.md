@@ -1,6 +1,6 @@
 ---
 mode: 'agent'
-tools: ['GetLiveContext']
+tools: ['home-assistant-mcp', 'GetLiveContext', 'HassTurnOff', 'HassTurnOn', 'todo_get_items']
 description: 'Identify the areas of the Home Assistant'
 ---
 
