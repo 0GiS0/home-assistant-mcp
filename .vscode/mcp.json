@@ -4,6 +4,7 @@
             "id": "home-assistant-domain",
             "description": "Home Assistant Domain",
             "type": "promptString",
+            "password": true
         },
         {
             "id": "home-assistant-token",
